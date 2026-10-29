@@ -1,0 +1,8 @@
+# Windows 工程：一律按文本处理，检出时统一为 CRLF
+# （build.bat 必须保留 CRLF，cmd.exe 解析 LF-only 批处理时可能出错）
+* text=auto eol=crlf
+
+# 二进制资源，禁止换行转换
+*.docx binary
+*.pdf binary
+*.exe binary
